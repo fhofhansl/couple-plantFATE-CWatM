@@ -16,15 +16,14 @@ def couple_plantFATE(
     
     assert irigation == 0
     
-    soil_water_potential_CWatM = xxxx # check with Mikhail
+    soil_water_potential_CWatM = xxxx # check with Mikhail (extract point variables daily time-step)
 
-    psi = run_plantFATE(
+    evapotranspiration = run_plantFATE(
         soil_water_potential_CWatM,
-        precipitation,
-        irradiance
+        vapour_pressure_deficit,
+        irradiance,
+        temperature
     )
-    
-    evapotranspiration = # how do I calculate this?
     return evapotranspiration
 
 
